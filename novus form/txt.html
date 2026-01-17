@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSC MUJ Newsletter</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+
+<!-- ================= NAV BAR ================= -->
+<div class="top-nav">
+  <div class="logo">CSC <span>muj</span></div>
+
+  <div class="nav-tabs">
+    <button class="nav-item active" data-tab="events">Events</button>
+    <button class="nav-item disabled" data-tab="payment">Payment</button>
+  </div>
+</div>
+
+<!-- ================= MAIN CARD ================= -->
+<div class="card">
+  <div class="back">
+    <div class="back-content">
+
+      <!-- EVENTS TAB -->
+      <section id="eventsTab" class="tab active">
+
+        <!-- STEP 1 -->
+        <section id="step1" class="step active">
+          <div class="poster-grid">
+
+            <div class="poster">
+              <input type="checkbox" id="p1">
+              <label for="p1" data-image="cac.jpg"
+                style="background-image:url('cac.jpg')"></label>
+            </div>
+
+            <div class="poster">
+              <input type="checkbox" id="p2">
+              <label for="p2" data-image="bounty3.jpg"
+                style="background-image:url('bounty3.jpg')"></label>
+            </div>
+
+            <div class="poster">
+              <input type="checkbox" id="p3">
+              <label for="p3" data-image="hackearn2.jpg"
+                style="background-image:url('hackearn2.jpg')"></label>
+            </div>
+
+            <div class="poster">
+              <input type="checkbox" id="p4">
+              <label for="p4" data-image="Mnexus.jpg"
+                style="background-image:url('Mnexus.jpg')"></label>
+            </div>
+<!-- Poster 5 -->
+            <div class="poster">
+              <input type="checkbox" id="p5">
+              <label
+                for="p5"
+                data-image="OIP (2).jpg"
+                style="background-image:url('OIP (2).jpg')">
+              </label>
+            </div>
+
+            <!-- Poster 6 -->
+            <div class="poster">
+              <input type="checkbox" id="p6">
+              <label
+                for="p6"
+                data-image="OIP (1).jpg"
+                style="background-image:url('OIP (1).jpg')">
+              </label>
+            </div>
+
+            <!-- Poster 7 -->
+            <div class="poster">
+              <input type="checkbox" id="p7">
+              <label
+                for="p7"
+                data-image="OIP.jpg"
+                style="background-image:url('OIP.jpg')">
+              </label>
+            </div>
+          </div>
+
+          <button class="next-btn" id="nextStepBtn">Next</button>
+        </section>
+
+        <!-- STEP 2 -->
+        <section id="step2" class="step">
+          <div class="carousel-container">
+
+            <button class="carousel-btn left" id="prevBtn">◀</button>
+
+            <div class="carousel-viewport">
+              <div class="carousel-track" id="carouselTrack"></div>
+            </div>
+
+            <button class="carousel-btn right" id="nextBtn">▶</button>
+          </div>
+
+          <button class="next-btn" id="goPayment">Proceed to Payment</button>
+        </section>
+
+      </section>
+
+      <!-- PAYMENT TAB -->
+      <section id="paymentTab" class="tab">
+        <div class="qr-wrapper">
+          <div class="qr-card">
+            <div class="qr-content">
+              <div class="qr-back">
+                <div class="qr-back-content"></div>
+              </div>
+              <div class="qr-front"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
